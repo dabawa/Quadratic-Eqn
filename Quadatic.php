@@ -16,7 +16,7 @@
             return $mult_ac;
         }
 
-        public function subsqr($b_sqr, $mult_ac){
+        public function subtrsqr($b_sqr, $mult_ac){
             $root = $b_sqr - $mult_ac;
             return $root;
         }
