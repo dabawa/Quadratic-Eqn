@@ -3,6 +3,7 @@
 
         public function negate_b($b){
             $neg = -$b;
+            return $neg;
         }
 
         public function sqr_b($b){
@@ -12,14 +13,17 @@
 
         public function mult_ac($a, $c){
             $mult_ac = 4 * $a * $c;
+            return $mult_ac;
         }
 
         public function subsqr($b_sqr, $mult_ac){
             $root = $b_sqr - $mult_ac;
+            return $root;
         }
         
         public function sqrrt($root){
-            sqrt($root);
+            $sqrrt = sqrt($root);
+            return $sqrrt;
         }
 
     }

@@ -2,7 +2,7 @@
     include 'quadatic.php';
     if(isset($_POST['submit'])){
         $quadatic = new Quadatic;
-        $test=$quadatic->sqr_b($_POST['b']);
+        $test=$quadatic->mult_ac($_POST['a'], $_POST['c']);
     }
 
 
@@ -24,7 +24,7 @@
             <p>Insert the coeffiecient of x^2, x and the constant in the boxes a, b & c respectively</p>
             a: <input type="text" name="a"><br>
             b: <input type="text" name="b"><br>
-            c: <input type="text" name="c"><br>
+            c: <input type="text" name="c"><br><br><br>
             <input type="submit" value="Find x!" name="submit">
             <h1>
             The result is <?php echo $test; ?>
